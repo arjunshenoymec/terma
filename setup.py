@@ -2,11 +2,11 @@ from setuptools import setup
 
 setup(
     name='terma',
-    version='1.0.0',
+    version='1.0.1',
     author='Arjun Shenoy A V',
     author_email='arjunshenoyav@gmail.com',
     description='Terminal Assistant',
-    long_description='Terminal Assistant to convert queries in plain language to the corresponding bash commands',
+    long_description=open("README.md").read(),
     packages=['terma'],
     install_requires=[
         "openai",
