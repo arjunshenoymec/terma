@@ -1,0 +1,4 @@
+include README.md
+include bin/*
+exclude experiments/*
+exclude __pycache__
