@@ -2,7 +2,7 @@ from prompt_toolkit import print_formatted_text, PromptSession
 from terma.utils import TermaUtil
 from terma.utils import EmptyResponseException, UnknownActionException
 from terma.prompt import PromptInterface
-from terma.config import PROMPT_STYLE
+from terma.config import PROMPT_STYLE, MOTD
 
 
 def coordinate(terma_util, action, command):
@@ -37,6 +37,7 @@ def interact_with_user(prompt_interface, terma_util):
 def main():
     """
     """
+    print(MOTD)
     session = PromptSession(style=PROMPT_STYLE)
     prompt_interface = PromptInterface(session)
     terma_util = TermaUtil()

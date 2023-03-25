@@ -1,8 +1,24 @@
 import os
 from prompt_toolkit.styles import Style
 
+def _get_token():
+    '''
+    Function to retrieve the OpenAI
+    token from either the .terma file
+    or from the envrionment as a env variable.
+    '''
+    home_dir = os.path.expanduser("~")
+    terma_config_file = '.terma'
+    config_file_path = os.path.join(home_dir, terma_config_file)
+    if os.path.exists(config_file_path):
+        with open(config_file_path, 'r') as f:
+            token = f.readline()
+    else:
+        token = os.environ["OPENAI_TOKEN"]
+    return token.strip() if token else None
+
 # Open ai token to access the openai endpoints
-OPENAI_TOKEN = os.environ["OPENAI_TOKEN"]
+OPENAI_TOKEN = _get_token()
 
 # OpenAI model parameters that will be used while
 # querying the openai endpoint
@@ -32,3 +48,5 @@ USER_INPUT_PROMPT = [
     ('class:username', os.getlogin()),
     ('class:pound',    ' \u276F\u276F '),
 ]
+
+MOTD = "Starting terma session \npress Ctrl+D or type \"quit()\" to exit"
