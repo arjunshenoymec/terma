@@ -14,7 +14,7 @@ The other option you have is to create a `.terma` file in your home directory an
 # Usage 
 After installing terma it can be used just by specifying the command `terma` in the envrionment in which the package was installed. This starts an interactive CLI session. In the session you can type in the query you have in plain english and the application would generate a CLI query based on that.
 
-![terma example](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTQwY2NiYWRkZDQ1YmI2NDlkYmExOGFhZTE0MjA2NzViNTc3YWI3ZSZjdD1n/jyKHGxzI9JvcIdkywS/giphy.gif)
+![terma example](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhiNDYxODRkMDAzNTFiNjFjZWUxMGNiM2UxNDc0NzlkODMwNjNmMCZjdD1n/fLIHvZfthjK3GYSxJx/giphy.gif)
 
 As seen in the above image, along with the generated comand terma also gives you choices on what to do with it. You can execute it in the session directly, copy it to the clipboard (for running in another terminal tab or sharing somewhere else) or you can just choose to continue with the conversation. 
 
