@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='terma',
-    version='1.0.1',
+    version='1.0.2',
     author='Arjun Shenoy A V',
     author_email='arjunshenoyav@gmail.com',
     description='Terminal Assistant',

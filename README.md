@@ -35,8 +35,6 @@ I have a couple of ideas to improve the user experience around the application:
 
 **Output validation**: In some cases, the openAI model being used generates invalid commands based on the query inputed by the user. One approach that can be used to deal with it is to pass the output from model into another one that performs this sort of validation and ensures that the generated text is a valid os command. 
 
-**Choice validation**: A small bug/issue in the current feature is that when the user is presented with the dropdown of followup action choices, they can enter any sort of string for their choice. The app does give a response that it does not recognize the follow up action requested, but if that can be validated such that the users will only be able to specify a valid action to be taken, it would be better experience over all. 
-
 **Interactive subprocess**: Would enable the users to execute commands which trigger interactive processes from with in the terma console. 
 
 More suggestions and contributions welcome :) 
