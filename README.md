@@ -1,6 +1,8 @@
 # Terma 
 Short for Terminal Asistant, Terma is An NLP based CLI application that takes in input from the user in plain language, converts that into an appropriate bash command and finally displays this generated command along with follow up actions that the user can take. 
 
+Inspired from the `Translate to bash` functionality in [fig.io](https://fig.io/).
+
 # Setup
 
 ## Pre-requisite
@@ -26,3 +28,15 @@ After installing terma it can be used just by specifying the command `terma` in 
 As seen in the above image, along with the generated comand terma also gives you choices on what to do with it. You can execute it in the session directly, copy it to the clipboard (for running in another terminal tab or sharing somewhere else) or you can just choose to continue with the conversation. 
 
 To exit press `ctrl-D` or just type `exit()` or `quit()`. 
+
+# Features planned
+
+I have a couple of ideas to improve the user experience around the application:
+
+**Output validation**: In some cases, the openAI model being used generates invalid commands based on the query inputed by the user. One approach that can be used to deal with it is to pass the output from model into another one that performs this sort of validation and ensures that the generated text is a valid os command. 
+
+**Choice validation**: A small bug/issue in the current feature is that when the user is presented with the dropdown of followup action choices, they can enter any sort of string for their choice. The app does give a response that it does not recognize the follow up action requested, but if that can be validated such that the users will only be able to specify a valid action to be taken, it would be better experience over all. 
+
+**Interactive subprocess**: Would enable the users to execute commands which trigger interactive processes from with in the terma console. 
+
+More suggestions and contributions welcome :) 
