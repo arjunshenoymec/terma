@@ -37,4 +37,7 @@ I have a couple of ideas to improve the user experience around the application:
 
 **Interactive subprocess**: Would enable the users to execute commands which trigger interactive processes from with in the terma console. 
 
+**Error Explanation** : In case of errors, it would be handy to get an explanation for the errors along
+with possible actions to resolve them. 
+
 More suggestions and contributions welcome :) 
