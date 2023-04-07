@@ -35,8 +35,6 @@ I have a couple of ideas to improve the user experience around the application:
 
 **Output validation**: In some cases, the openAI model being used generates invalid commands based on the query inputed by the user. One approach that can be used to deal with it is to pass the output from model into another one that performs this sort of validation and ensures that the generated text is a valid os command. 
 
-**Interactive subprocess**: Would enable the users to execute commands which trigger interactive processes from with in the terma console. 
-
 **Error Explanation** : In case of errors, it would be handy to get an explanation for the errors along
 with possible actions to resolve them. 
 
